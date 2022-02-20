@@ -12,4 +12,6 @@ Features of this robot:
 
 **Participate in polls automatically**
 
+**Beautiful and easy graphical environment**
+
 This robot was built using the Selenium Library
