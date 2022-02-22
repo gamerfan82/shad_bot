@@ -2,10 +2,13 @@
 
 from selenium import webdriver
 from time import sleep,localtime
-from os import system
+from os import system,path
 from tkinter import *
 from tkinter import messagebox
 from threading import Thread
+
+
+
 root = Tk()
 root.minsize(600,400)
 root.maxsize(600,400)
@@ -35,11 +38,16 @@ def closs():
 
 
 driver.set_window_position(-10000,0)
-url = "https://web.shad.ir/#/login"
+urlr = 'https://web.rubika.ir/#/login'
+urls = "https://web.shad.ir/#/login"
 system('cls')
 
 def tshoare():
-    driver.get(url)
+    
+    if radio.get()==2:
+        driver.get(urlr)
+    else:
+        driver.get(urls)
     sleep(3)
     number = input_shomare.get()
     driver.find_element_by_name('phone_number').send_keys(number)
@@ -50,6 +58,9 @@ def tshoare():
     la1.pack()
     b_tcode.pack()
     b_tayid["state"] = "disabled"
+    
+
+
 
 def tcode():
     key = code.get()
@@ -74,6 +85,9 @@ def tcode():
     btt.place(x=494,y=104)
     bbtt.place(x=507,y=60)
     b_import.place(x=42,y=94)
+    input_shomare.config(state='disabled')
+    code.config(state='disabled')
+
 def import_name():
         for tag in range(1,8):
             try:
@@ -105,6 +119,7 @@ def ersalname():
     nameg.insert(1, li.get(ACTIVE))
 
 def appendlist():
+    
     if appen.get().split() == []:
         messagebox.showerror('error','!ورودی خالی است')
     else:
@@ -295,10 +310,10 @@ ersal0 = Button(root,text='ارسال',font=30,command=ersal,bg='#75E6DA')
 
 b_ersalg = Button(root,text='ارسال پیام به صورت گروهی',font=13,command=ersalg,bg='#75E6DA')
 
-
 li = Listbox(root,font=20,bg='#D4F1F4')
 li.place(x=0,y=200)
 btersalname = Button(root,text='قرار دادن نام',font=15,command=ersalname,bg='#75E6DA')
+
 
 
 mad = Label(root,text='Telegram:Gamerfan82',fg='#05445E',bg='#189AB4')
@@ -316,6 +331,14 @@ b_import = Button(root,text='جستجو مخاطبین',font=('',13),command=imp
 
 btt = Button(root,text='ارسال در زمان معین',bg='#75E6DA',command=ersaltime)
 bbtt = Button(root,text='ربات نظرسنجی',command=botn,font=('bnazanin',12),bg='#75E6DA')
+
+radio = IntVar() 
+R2 = Radiobutton(root, text="شاد", variable=radio,bg='#189AB4' , value=1)  
+R2.place(x=540,y=3)  
+
+R3 = Radiobutton(root, text="روبیکا", variable=radio,bg='#189AB4', value=2)  
+R3.place(x=540,y=33)  
+
 
 
 
