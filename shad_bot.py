@@ -18,9 +18,13 @@ options = webdriver.ChromeOptions()
 options.add_experimental_option('excludeSwitches', ['enable-logging'])
 options.add_argument("--start-maximized")
 options.add_argument('window-size=2560,1440')
-driver = webdriver.Chrome(executable_path='chromedriver.exe',options=options)
 
+try:
+    driver = webdriver.Chrome(executable_path='chromedriver.exe',options=options)
 
+except:
+    messagebox.showerror('error','chromedriver \n سازگار نیست \n با توجه به نسخه کروم خود ان را دانلود کنید')
+    system("start \"\" https://chromedriver.chromium.org/downloads")
 
 def closs(): 
     sol = messagebox.askokcancel('exit','برنامه بسته شود ؟')
