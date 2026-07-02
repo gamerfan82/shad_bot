@@ -154,9 +154,7 @@ python main.py
 
 **Erfan Sadeghi**
 
-Telegram:
-
-t.me/Gamerfan82
+<a href="t.me/Gamerfan82"> Telegram </a>
 
 
 # ⭐ If you like this project, don't forget to leave a Star!
