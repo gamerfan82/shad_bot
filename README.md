@@ -150,11 +150,7 @@ python main.py
 
 ---
 
-# 👨‍💻 توسعه‌دهنده
-
-**Erfan Sadeghi**
-
-<a href="t.me/Gamerfan82"> Telegram </a>
-
+# 👨‍💻 ارتباط با من
+[![Telegram](https://img.shields.io/badge/Telegram-@Gamerfan82-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Gamerfan82)
 
 # ⭐ If you like this project, don't forget to leave a Star!
