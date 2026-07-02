@@ -12,15 +12,14 @@
 
 A desktop automation tool for **SHAD** and **Rubika Web** built with **Python**, **Selenium** and **Tkinter**.
 
----
+<p align="center">
 
-### 🇮🇷 فارسی | 🇺🇸 English
+🇮🇷 **فارسی** |
+<a href="README.en.md">🇺🇸 English</a>
+
+</p>
 
 </div>
-
----
-
-# 🇮🇷 فارسی
 
 ## 📖 معرفی
 
