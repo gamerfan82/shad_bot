@@ -168,13 +168,8 @@ Shad_bot
 
 ---
 
-## 👨‍💻 Developer
-
-**Erfan Sadeghi**
-
-Telegram:
-
-**@Gamerfan82**
+## 👨‍💻 Contact 
+[![Telegram](https://img.shields.io/badge/Telegram-@Gamerfan82-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/Gamerfan82)
 
 ---
 
